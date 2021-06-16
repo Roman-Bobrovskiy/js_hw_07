@@ -6,7 +6,7 @@ let inputRef = document.querySelector("#name-input");
 let spamRef = document.querySelector("#name-output");
 inputRef.addEventListener("keydown", (event) => {
   inputRef.textContent = event.key;
-  spamRef.textContent = event.currentTarget.value;
+  spamRef.textContent = event.target.value;
   if (spamRef.textContent === "") {
     spamRef.textContent = "незнакомец";
   }
